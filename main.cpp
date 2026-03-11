@@ -10,25 +10,28 @@ int main()
 	// heap 배열을 size 크기만큼 int, 시작번지(int*)
 
 	int Input = 0;
+	int* P = nullptr;
 
 	cin >> Input;
 
-	int* P = new int[Input];
+	P = new int[Input];
 
-	if (P == nullptr) // if(P == nullptr), if(P == 0)
+	if (!P) // if(P == nullptr), if(P == 0)
 	{
 		return -1;
 	}
 
 	for (int i = 0; i < Input; i++)
 	{
-		P[i] = i + 1; // -> 	P[i] = i + 1;
+		P[i] = i + 1;
 	}
 
 	for (int i = 0; i < Input; i++)
 	{
-		cout << *(P + 1) << endl; // -> cout << *(P + 1) << endl
+		cout << *(P + i) << ", ";
 	}
+
+	cout << endl;
 
 	// 포인터 변수의 주소의 heap의 영역 반환
 	delete[] P;
