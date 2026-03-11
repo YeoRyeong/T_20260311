@@ -2,7 +2,7 @@
 
 using namespace std;
 
-char Length(char* Leng)
+void Length(char* Leng)
 {
 	int Count = 0;
 
@@ -18,10 +18,10 @@ char Length(char* Leng)
 
 	cout << "문자열의 갯수 : " << Count << endl;
 
-	return 0;
+
 }
 
-char Change(char* Chan)
+void Change(char* Chan)
 {
 	cout << "특정문 바꾸기(l -> W) : ";
 	for (int j = 0; j < 6; j++)
@@ -34,10 +34,9 @@ char Change(char* Chan)
 		cout << Chan[j];
 	}
 
-	return 0;
 }
 
-char Search(char* Sear)
+void Search(char* Sear)
 {
 	for (int k = 0; k < 6; k++)
 	{
@@ -47,7 +46,6 @@ char Search(char* Sear)
 		}
 	}
 
-	return 0;
 }
 
 int main()
