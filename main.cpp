@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-	// computer 
+	// computer memory unmanaged language / human managed language
 	// heap 동적으로 int 사이즈 만들고 주소 반환
 	int* Players = new int;
 
